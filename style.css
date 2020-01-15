@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('wooden-floor-1853403_1920.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+.nav{
+background-color: #00000094;
+margin-bottom: 3rem;
+text-align: left;
+position: fixed;
+width: 100%;
+padding-left: 1rem;
+}
+
+.nav button{
+    font-size: 1rem;
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #a38f77;
+}
+
+.nav button:hover{
+    color:  #a38f77;
+    background-color: #fff;
+}
+
+.nav button:focus{
+    outline: none;
+}
+
+.middle{
+    padding-top: 5rem;
+}
+
+.head {
+    font-size: 1.7rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hide{
+    display: none !important;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.btns button,
+.t-y-t-btns button{
+    border: 2px solid #343a40;
+    border-radius: 0.25rem;
+    background-color: #343a40;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.t-y-t-btns{
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.btns button:hover,
+.btns button:active{
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+.btns button:focus{
+outline: none;
+}
+
+.form-group-1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-group-1 input{
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-width: 0;
+}
+
+.form-group-1 input:focus{
+    outline: none;
+}
+
+form label{
+    font-size: larger;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.country-name{
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    color: #a38f77;
+}
+
+.form-group-1 button,
+.form-group-2 button
+{
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+}
+
+.form-group-1 button:focus,
+.form-group-2 button:focus{
+    outline: none;
+}
+
+.cities,
+.cities2,
+#time-zone{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto;
+}
+
+.cities li,
+.cities2 li,
+#time-zone li{
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    margin: 2px 2px 2px 0.5rem;
+}
+
+.cities li:hover,
+.cities2 li:hover,
+#time-zone li:hover{
+    background-color: #5a6268;
+}
+
+#info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-card{
+    background-color: #f8f9fa;
+    height: 22rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.first-result{
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: .75rem 1.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.date{
+    font-size: 1.5rem;
+}
+
+.info-card div{
+    padding: 2rem;
+}
+
+#TTY{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#TTY div button{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+#TTY div button:hover,
+#TTY div button:active{
+    background-color: #23272b;
+}
+
+.infoList{
+    list-style: none;
+    padding: 0.25rem;
+}
+
+.infoList li{
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.infoList li span{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.info-card2{
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
+.form-group-2{
+    text-align: center;
+}
+
+.form-group-2 input{
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+
+.form-group-2 input:focus{
+    outline: none;
+}
+
+.error{
+    height: 7rem;
+    background-color: #e8ce178c;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 2rem auto;
+    border: 1px solid aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+@media only screen and (min-width: 767px) {
+
+    .head {
+        font-size: 2rem;
+    }
+
+    .t-y-t-btns{
+        margin-bottom: 0;
+    } 
+
+    .cities,
+    .cities2,
+    #time-zone{
+        max-width: 90%;
+    }
+
+    #info{
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 50%;
+    }
+
+  }
+
+@media only screen and (min-width: 960px) {
+    .btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+
+    .cities li,
+    .cities2 li,
+    #time-zone li{
+    font-size: 1.1rem;
+    }
+
+    #info{
+        flex-direction: row;
+    }
+
+    .info-card{
+        width: 21rem;
+        max-width: 30%;
+    }
+
+    .cities,
+    .cities2,
+    #time-zone{
+        max-width: 50%;
+    }
+
+    .info-card2{
+        width: 49rem;
+    }
+
+    .infoList li span{
+        font-size: 2rem;
+    }
+
+    .error{
+        width: 50%;
+    }
+  }

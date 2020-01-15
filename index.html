@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Name day</title>
+</head>
+<body>
+<div class="nav hide">
+    <button class="start-again">Start again</button>
+</div> 
+<div class="middle">
+    <h1 class="head text-center">International Name day</h1> 
+    <div class="btns container">
+        <button class="by-name">By name and country</button>
+        <button class="our-days">TODAY & TOMORROW & YESTERDAY </button>
+        <button class="by-day">By day and month</button>
+    </div>
+    <div class="info-div">
+        <div id='countriesList' class="hide">
+            <h1 class="text-center">Choose a country</h1>
+            <ul class="cities container"></ul>
+        </div>
+        <form class="form-group-1 hide">
+            <label for="name-country">Write a name</label>
+            <input type="text" name='nameCountry' id="name-country" placeholder="Write...">
+            <button type="submit">Click</button>
+        </form>
+        <div id="TTY" class="hide">
+            <div class="first-list hide">
+                <h1 class="text-center">Choose a time zone</h1>
+                <ul id="time-zone" class="hide"></ul>
+            </div>
+            <div class="second-list hide">
+                <h1 class="text-center">Choose a country</h1>
+                <ul class="cities2 container hide"></ul>
+            </div>
+            <div class=" t-y-t-btns hide">
+                <button id="yesterday">YESTERDAY</button>
+                <button id="today">TODAY</button>
+                <button id="tomorrow">TOMORROW</button>
+            </div>
+        </div>
+        <form class="form-group-2 hide" id="DM">
+            <label for="day-month">Choose a day</label>
+            <input type="date" name='dayMonth' id="day-month">
+            <button type="submit">Click</button>
+        <!--
+        <label for="day-month">Choose a day</label>
+        <input type="number" name='dayMonth' id="day-month" placeholder="Write a day">
+        <label for="month-day">Choose a day</label>
+        <input type="number" name='monthDay' id="month-day" placeholder="Write a month"> -->
+        </form>
+        <div class="container">
+            <div id="info">
+
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script/getnameday.js"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>
