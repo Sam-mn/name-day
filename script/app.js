@@ -1,5 +1,6 @@
 const citiesList = document.querySelector('.cities');
 const citiesList2 = document.querySelector('.cities2');
+const citiesList3= document.querySelector('.cities3');
 const timeZoneList = document.querySelector('#time-zone');
 const cdForm = document.querySelector('.form-group-1');
 const dmForm = document.querySelector('#DM');
@@ -45,6 +46,7 @@ document.querySelector('.by-day').addEventListener('click', ()=>{
     document.querySelector('.info-div').classList.remove('hide');
     nav.classList.remove('hide');
     document.querySelector('#info').innerHTML= '';
+    document.querySelector('.third-list').classList.remove('hide');
 })
 
 //To convert from city code to city name.
@@ -174,6 +176,7 @@ const citiesEl = cities.map(city=>`<li class='${city.code}'>${city.name}</li>`).
 
 citiesList.innerHTML += citiesEl;
 citiesList2.innerHTML += citiesEl;
+citiesList3.innerHTML += citiesEl;
 
 let cityCode = null;
 citiesList.addEventListener('click', e=>{
@@ -257,17 +260,26 @@ document.querySelector('#yesterday').addEventListener('click', e=>{
 })
 
 //get information by day & month
+let cityCode3 = null;
+citiesList3.addEventListener('click', e=>{
+    if(e.target.tagName === 'LI'){
+        cityCode3 = e.target.className;
+    }
+    document.querySelector('.third-list').classList.add('hide');
+})
 
 dmForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     document.querySelector('#info').innerHTML= '';
+    document.querySelector('.third-list').classList.remove('hide');
     let day = dmForm.dayMonth.value.split('-');
     /*
     //To apply searching by numbers buttons
     let day = dmForm.dayMonth.value;
     let month = dmForm.monthDay.value;
     */
-    getNameDay(`https://api.abalin.net/namedays?month=${parseInt(day[1])}&day=${parseInt(day[2])}`)
+    getNameDay(`https://api.abalin.net/namedays?country=${cityCode3}&month=${parseInt(day[1])}&day=${parseInt(day[2])}`)
     .then(data=>addInfo2(data.data))
     .catch(err=>appendError('#ea00008c', err.message));
 })
+

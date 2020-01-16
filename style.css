@@ -142,6 +142,7 @@ form label{
 
 .cities,
 .cities2,
+.cities3,
 #time-zone{
     display: flex;
     justify-content: center;
@@ -153,6 +154,7 @@ form label{
 
 .cities li,
 .cities2 li,
+.cities3 li,
 #time-zone li{
     background-color: #6c757d;
     border: 1px solid #6c757d;
@@ -166,6 +168,7 @@ form label{
 
 .cities li:hover,
 .cities2 li:hover,
+.cities3 li:hover,
 #time-zone li:hover{
     background-color: #5a6268;
 }
@@ -277,6 +280,7 @@ form label{
 
     .cities,
     .cities2,
+    .cities3,
     #time-zone{
         max-width: 90%;
     }
@@ -301,6 +305,7 @@ form label{
 
     .cities li,
     .cities2 li,
+    .cities3 li,
     #time-zone li{
     font-size: 1.1rem;
     }
@@ -316,6 +321,7 @@ form label{
 
     .cities,
     .cities2,
+    .cities3,
     #time-zone{
         max-width: 50%;
     }
